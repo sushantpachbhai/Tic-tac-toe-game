@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.navbar{
+    background-color: rgb(41, 2, 66);
+    color: white;
+    font-size: 1.3rem;
+    width: 100vw;
+    height: 62px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navbar ul{
+    list-style-type:none;
+    
+}
+
+/* game-content */
+.game-content{
+    /* background-color: yellowgreen; */
+    /* height: 50vh; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.game{
+    display: grid;
+    grid-template-rows: repeat(3,20vh);
+    grid-template-columns: repeat(3,10vw);
+    margin-right: 20px;
+    position: relative;
+}
+/* .line{
+    height: 2px;
+    background-color: rgb(48, 7, 113);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: 2s width ease-in-out, 2s translate ease-in-out;
+} */
+.box{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(220, 197, 227);
+}
+.box-content{
+    font-size: 4.5rem;
+    font-family: "Roboto", sans-serif;
+}
+.game-info{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+}
+.game-info h3{
+    margin-bottom: 12px;
+}
+.set-turn{
+    font-size: 1.3rem;
+}
+#reset-btn{
+    margin: 0 12px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #f2ebf2;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#winimg{
+    width: 0;
+    transition: 1s width ease-out;
+}
+.bl-0{
+    border-left: none;
+}
+.br-0{
+    border-right: none;
+}
+.bt-0{
+    border-top: none;
+}
+.bb-0{
+    border-bottom: none;
+}
+@media (max-width: 850px){
+    .game-content{
+        flex-wrap: wrap;
+    }
+    .game-info{
+        margin: 20px 0;
+    }
+    .game{
+        margin-right: 0px;
+        grid-template-rows: repeat(3,15vh);
+        grid-template-columns: repeat(3,20vw); 
+    }
+}
