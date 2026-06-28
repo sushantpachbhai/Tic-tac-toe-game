@@ -1,6 +1,6 @@
-let music = new Audio("../sounds/music.mp3");
-let gameoversound = new Audio("../sounds/gameover.mp3");
-let boxclicksound = new Audio("../sounds/ting.mp3");
+let music = new Audio("sounds/music.mp3");
+let gameoversound = new Audio("sounds/gameover.mp3");
+let boxclicksound = new Audio("sounds/ting.mp3");
 let excitedgif = document.getElementById("winimg");
 let turn = "X";
 let isgameover = false;
